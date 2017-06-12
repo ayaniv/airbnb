@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="airbnb">
+    <head>
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="vendor/css/bootstrap.min.css" />
+        <script type="text/javascript" src="../js/vendor.bundle.js"></script>
+        <script type="text/javascript" src="../js/app.bundle.js"></script>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>Yaniv Aharon</title>
+    </head>
+
+    <body ng-controller="airbnbCtrl as airbnbCtrl">
+        <app-header tabs-data="airbnbCtrl.tabsData" get-data-function="airbnbCtrl.getDataByCity(city)" class="ListingsHeader" is-loading="airbnbCtrl.isLoading" data="airbnbCtrl.ListingsHeader"></app-header>
+
+        <div class="ListingsContainer">
+            <div class="container">
+                <div class="row">
+                    <listing-card click="airbnbCtrl.getReviewsById(listing)" class="ListingWrapper col-md-6 col-lg-3" data="listing"
+                                  ng-repeat="listing in airbnbCtrl.currListingsResult"></listing-card>
+                </div>
+            </div>
+        </div>
+
+        <listing-modal is-loading="airbnbCtrl.isLoading" reviews="airbnbCtrl.selectedListingReviews" data="airbnbCtrl.selectedListing" />
+    </body>
+</html>

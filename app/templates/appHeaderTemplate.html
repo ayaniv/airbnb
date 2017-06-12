@@ -1,0 +1,18 @@
+<div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-6">
+                <div class="Title">{{header.title}}</div>
+            </div>
+
+            <div class="col-xs-6 text-align-right">
+                <div class="dropdown">
+                    <div class="btn-group" role="group">
+                        <button type="button" ng-click="getData(tab.value)" ng-repeat="tab in tabsData" class="btn btn-default">{{tab.name}}</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div ng-if="isLoading" class="loader"></div>
+</div>

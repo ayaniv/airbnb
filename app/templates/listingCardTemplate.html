@@ -1,0 +1,15 @@
+<div data-toggle="modal" data-target="#myModal" ng-click="click()" class="Listing" ng-if="listing">
+    <div class="ListingImage">
+        <img ng-src="{{listing.picture}}"/>
+    </div>
+    <div class="ListingInfoWrapper">
+        <div class="ListingInfo">
+            <div class="ListingName">{{listing.title}}</div>
+            <div class="ContactJobInfo">
+                <div class="MoreInfo">
+                    {{listing.address}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

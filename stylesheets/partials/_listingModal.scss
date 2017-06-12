@@ -1,0 +1,28 @@
+.modal-body {
+
+  img {
+    width: 100%;
+  }
+
+  .MoreInfo {
+    padding: 10px 0;
+  }
+}
+
+.review {
+  padding-top:20px;
+  .avatar {
+    width: 20px;
+    height:20px;
+    border-radius:50%;
+    margin-right:4px;
+  }
+  .review_date {
+    color: $grey300;
+  }
+
+  .review_text {
+    font-style: italic;
+  }
+}
+

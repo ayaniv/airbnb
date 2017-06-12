@@ -1,0 +1,18 @@
+@mixin box-shadow($shadow) {
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  box-shadow: $shadow;
+}
+
+@mixin transition($options){
+  //width 2s linear 1s;
+  -webkit-transition: $options;
+  transition: $options;
+}
+
+@mixin transform($options) {
+  //rotate(7deg)
+  -ms-transform: $options; /* IE 9 */
+  -webkit-transform: $options; /* Chrome, Safari, Opera */
+  transform: $options;
+}

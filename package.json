@@ -1,0 +1,35 @@
+{
+  "name": "TestApp",
+  "version": "1.0.0",
+  "description": "ayaniv@gmail.com",
+  "main": "server/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bundle": "webpack --watch",
+    "twitter": "node server/index.js",
+    "start": "node app.js",
+    "dev": "npm run start & npm run watch-css & npm run bundle",
+    "build-css": "node-sass --include-path scss stylesheets/main.scss static/css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "private": true,
+  "author": "Yaniv Aharon",
+  "license": "ISC",
+  "devDependencies": {
+    "angular": "^1.6.4",
+    "bootstrap": "^3.3.7",
+    "express": "^4.15.3",
+    "jquery": "^3.2.1",
+    "lodash": "^4.17.4",
+    "node-sass": "^4.5.3",
+    "nodemon": "^1.11.0",
+    "raw-loader": "^0.5.1",
+    "webpack": "^2.6.1"
+  },
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "json2csv": "^3.7.3",
+    "moment": "^2.18.1",
+    "twitter": "^1.7.0"
+  }
+}
