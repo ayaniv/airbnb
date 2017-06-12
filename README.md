@@ -1,5 +1,5 @@
-##Airbnb Listings
-######Yaniv Aharon
+## Airbnb Listings
+###### Yaniv Aharon
 
 How to install?
 
@@ -13,7 +13,7 @@ to get csv file please run:
 1. npm run twitter
 ```
 
-##What's inside?
+## What's inside?
 1. Node.js bot that exports tweets from the last 24 hours mentioning airbnb to a csv.
 2. Angular 1.5 app that allows user to select a city. When making a choice, it should show a list of listings in that city (picture, title, address).
 When clicking on a listing it should redirect to a page / open a modal with the listing (picture, title, address again) and that listing's reviews.
